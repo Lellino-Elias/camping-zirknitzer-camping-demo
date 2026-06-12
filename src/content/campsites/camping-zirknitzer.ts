@@ -1,231 +1,225 @@
 import type { CampsiteConfig } from "../types";
 
-/**
- * Camping Gasthof Zirknitzer — Döllach, Großkirchheim, Kärnten.
- * Alle Texte/Fakten belegt aus camping-zirknitzer.at (Stand-Scrape 2026-06).
- * Bilder = ausschließlich eigene Zirknitzer-Fotos in /public/campsites/camping-zirknitzer/.
- * EHRLICH: der Platz liegt AM UFER DES FLUSSES MÖLL (kein See → kein `see`-Feld),
- * mitten im Nationalpark Hohe Tauern. Preise sind REAL (Preisliste 2026 der Website).
- * Kein eigenes Marken-Logo (Website nutzt ein generisches "Camping"-Logo) → `logo`
- * weggelassen, Footer zeigt die Wortmarke. Keine eindeutige Auszeichnung belegt → awards leer.
- */
 const IMG = "/campsites/camping-zirknitzer";
 
-export const campingZirknitzer: CampsiteConfig = {
+const campingZirknitzer: CampsiteConfig = {
   name: "Camping Gasthof Zirknitzer",
   shortName: "Zirknitzer",
   slug: "camping-zirknitzer",
-  ort: "Döllach · Großkirchheim",
+  ort: "Döllach, Großkirchheim",
   region: "Kärnten",
   brandKind: "Camping & Gasthof",
   regionLong: "Nationalpark Hohe Tauern · Kärnten · Österreich",
 
-  claim: "Gemütliches Camping am Ufer der Möll – mitten im Nationalpark Hohe Tauern",
-  claimEmphasis: "mitten im Nationalpark Hohe Tauern",
+  heroVariant: "center",
+
+  claim: "Am Ufer der Möll, mitten im Nationalpark Hohe Tauern",
+  claimEmphasis: "mitten im Nationalpark",
+  emailDetail: "euer Platz direkt am Glocknerradweg R8",
   intro:
-    "Ein familiär geführter Betrieb mit Campingplatz, Gasthof, Restaurant, Hütten und Ferienhaus – am Ortsrand von Döllach, am Ufer der kleinen Möll, umgeben von den Bergen des Nationalparks Hohe Tauern.",
+    "Am Ortsrand von Döllach, am Ufer der kleinen Möll und mitten im Nationalpark Hohe Tauern liegt unser familiär geführter Campingplatz mit Gasthof, Hütten und Ferienhaus — 500 Meter ins Dorf, 300 Meter zur Freizeitanlage.",
+
+  logo: { src: `${IMG}/logo-953cb4ec24.png`, alt: "Camping Gasthof Zirknitzer Logo" },
 
   statement: {
-    text: "Bei uns ist Urlaub noch Familiensache – ein persönlich geführter Platz mit Gasthof und Restaurant, mitten in der Bergwelt der Hohen Tauern.",
-    emphasis: "noch Familiensache",
+    text: "Bei uns campst du am Ufer der Möll — der Glocknerradweg R8 führt direkt am Platz vorbei.",
+    emphasis: "am Ufer der Möll",
   },
 
   pillars: [
     {
-      title: "Mitten im Nationalpark Hohe Tauern",
-      text: "Eingebettet in die Bergwelt rund um den Großglockner – am Ortsrand von Döllach in der Gemeinde Großkirchheim.",
-      image: { src: `${IMG}/pillar-hohe-tauern.webp`, alt: "Verschneite Gipfel und herbstliche Lärchenwälder im Nationalpark Hohe Tauern" },
+      title: "Nationalpark vor der Haustür",
+      text: "Der Campingplatz liegt inmitten des Nationalparks Hohe Tauern — Gletscher, Almwiesen und Gipfel beginnen direkt hinter dem Ortsrand.",
+      image: { src: `${IMG}/gallery-4f7e5ae21c.webp`, alt: "Herbstliche Lärchen und verschneite Gipfel der Hohen Tauern bei den Mittner Almen" },
     },
     {
-      title: "Im grünen Mölltal",
-      text: "Am Ufer des kleinen Flusses Möll, ruhig zwischen Wiesen, Wald und Bergen – das Dorfzentrum ist nur rund 500 m entfernt.",
-      image: { src: `${IMG}/pillar-moelltal.webp`, alt: "Blick über das Mölltal mit Großkirchheim und den Bergen der Hohen Tauern" },
+      title: "Hütten & Ferienhaus zum Mieten",
+      text: "Wer es fester mag, übernachtet im gemütlichen Blockhaus, in der Hütte oder im Ferienhaus „Haus Julia“.",
+      image: { src: `${IMG}/gallery-4324ea8fa7.webp`, alt: "Gemütliches Blockhaus zum Mieten bei Camping Zirknitzer" },
     },
     {
-      title: "Stellplatz, Hütte oder Ferienhaus",
-      text: "Vom ebenen Stellplatz über urige Holzhütten bis zum eigenen Ferienhaus – für jeden die passende Unterkunft.",
-      image: { src: `${IMG}/pillar-huetten.webp`, alt: "Urige Blockhütte am Campingplatz Zirknitzer" },
+      title: "Familienbetrieb mit Gasthof",
+      text: "Campingplatz, Gasthof, Restaurant und Ferienhaus — alles in einer Hand und persönlich geführt.",
+      image: { src: `${IMG}/gallery-7c698f34de.webp`, alt: "Handgemaltes Schild „Camping Zirknitzer“ an der Hauswand" },
     },
   ],
 
   usps: [
-    "Freibad Großkirchheim gratis",
-    "Restaurant am Platz",
-    "Mitten im Nationalpark Hohe Tauern",
-    "Ganzjährig geöffnet",
-    "Direkt am Glocknerradweg R8",
+    "Am Glocknerradweg R8",
+    "Eigenes Restaurant",
+    "Hütten & Ferienhaus",
+    "Freibad gratis",
+    "CEE-Stromanschlüsse",
     "Hunde willkommen",
-    "Familiär geführt",
-    "300 m zur Sport- & Freizeitanlage",
   ],
 
   trust: {
-    heading: "Worauf du dich bei Camping Zirknitzer verlassen kannst",
-    headingEmphasis: "verlassen",
+    heading: "Klein, familiär und mittendrin in den Bergen",
+    headingEmphasis: "familiär",
     intro:
-      "Persönlich geführt von Familie Zirknitzer, mit Gasthof und Restaurant am Platz, gratis Eintritt ins Naturschwimmbad Großkirchheim und einer ruhigen Lage am Ufer der Möll – mitten im Nationalpark Hohe Tauern.",
+      "Seit Generationen führt Familie Zirknitzer Camping, Gasthof und Ferienhaus in Döllach persönlich. Ruhige Lage im Nationalpark, kurze Wege ins Dorf und zur Freizeitanlage — und das Freibad Großkirchheim ist für Gäste gratis.",
   },
 
-  // Keine eindeutig belegbare Auszeichnung auf der Quelle (nur ADAC-/Camping-Führer-Badges im Footer,
-  // nicht eindeutig zuordenbar) → ehrlich leer; das Vertrauens-Band zeigt nur die USP-Pills.
   awards: [],
 
-  // Ganzjährig geöffnet (Hauptsaison laut Preisliste: Winter, Juli, August).
-  saison: { von: "Jänner", bis: "Dezember" },
-
   hero: {
-    aerial: { src: `${IMG}/hero-luftaufnahme.webp`, alt: "Luftaufnahme des Campingplatzes Zirknitzer im Mölltal, umgeben von Wald und Bergen" },
+    aerial: { src: `${IMG}/gallery-f9396d272a.webp`, alt: "Camping Zirknitzer: Wohnmobil und Zelte auf der Wiese vor den Bergen" },
+  },
+
+  breather: {
+    image: { src: `${IMG}/gallery-cb21eed187.webp`, alt: "Abendrot über den verschneiten Gipfeln der Hohen Tauern" },
+    line: "Wenn die Hohen Tauern im Abendlicht glühen.",
   },
 
   camping: {
     heading: "Camping am Ufer der Möll",
     intro:
-      "Gemütliche Stellplätze direkt am Ufer der kleinen Möll – mit Komfort-WC-Anlage (3 Familienbäder, eines behindertengerecht), Warmwasser-Duschen, CEE-Stromanschlüssen, chemischer Entsorgung, Waschmaschine, Trockner und Trinkwasser überall. Restaurant und Gasthof gehören dazu, das Dorfzentrum ist nur rund 500 m entfernt.",
+      "Ebene Wiese, alter Baumbestand und der Fluss vor der Tür: Komfort-WC mit drei Familienbädern, Warmwasser, Waschmaschine, Trockner, chemische Entsorgung und überall Trinkwasser inklusive.",
     features: [
       {
-        title: "Großzügige Stellplätze",
-        text: "Große, mittlere und kleine Stellplätze für Wohnmobil, Caravan, Zelt, Motorrad oder Fahrrad – eben, ruhig und mit CEE-Stromanschluss.",
-        image: { src: `${IMG}/camp-stellplatz.webp`, alt: "Stellplätze mit Wohnmobil und Wohnwagen auf der Wiese am Campingplatz Zirknitzer" },
-      },
-      {
         title: "Direkt am Glocknerradweg R8",
-        text: "Der Platz liegt direkt am Glocknerradweg R8 – zugleich Wanderweg und Tal-Linie des Alpe-Adria-Trails.",
-        image: { src: `${IMG}/camp-glocknerradweg.webp`, alt: "Weg am Campingplatz entlang des Glocknerradwegs R8" },
+        text: "Der Radweg R8 — zugleich Wanderweg und Talroute des Alpe-Adria-Trails — führt unmittelbar am Platz vorbei.",
+        image: { src: `${IMG}/gallery-e8a07e247d.webp`, alt: "Weg am Zaun des Campingplatzes entlang, dahinter die Berge" },
       },
       {
-        title: "Familiär geführt – mit Restaurant",
-        text: "Campingplatz, Gasthof und Restaurant aus einer Hand – persönlich geführt von Familie Zirknitzer.",
-        image: { src: `${IMG}/camp-zirknitzer-schild.webp`, alt: "Handgemaltes Schild „Camping Zirknitzer“" },
+        title: "Mitten im Grünen",
+        text: "Eingebettet zwischen Wiese, Wald und Berghängen am Ortsrand von Döllach — 500 Meter sind es ins Dorfzentrum.",
+        image: { src: `${IMG}/gallery-687aadab17.webp`, alt: "Blick über den begrünten Campingplatz Zirknitzer mit Hütten und Zelten" },
       },
     ],
   },
 
   mobilheime: {
-    heading: "Hütten, Zimmer & Ferienhaus",
+    heading: "Unsere Unterkünfte zum Mieten",
     intro:
-      "Lieber feste Wände als Zelt? Wir vermieten drei Komfortzimmer, eine Ferienwohnung, zwei urige Hütten und ein eigenes Ferienhaus – gemütlich eingerichtet, mitten in den Bergen.",
+      "Lieber ein festes Dach? Wir vermieten Komfortzimmer, zwei Hütten und das Ferienhaus „Haus Julia“ — alle direkt am Platz.",
     items: [
       {
         name: "Ferienhaus „Haus Julia“",
-        kind: "Ferienhaus · 2–4 Personen",
-        text: "Unser freistehendes Ferienhaus für 2 bis 4 Personen mit eigener Küche – ideal für Familien.",
-        image: { src: `${IMG}/unterkunft-ferienhaus.webp`, alt: "Ferienhaus „Haus Julia“ am Campingplatz Zirknitzer" },
+        kind: "Ferienhaus für 2–4 Personen",
+        text: "Eigenes kleines Ferienhaus mit Wohnküche, Schlafzimmer und Bad — ideal für Familien, die mehr Raum möchten.",
+        image: { src: `${IMG}/gallery-f64b28d8ff.webp`, alt: "Ferienhaus Haus Julia am Camping Zirknitzer" },
         priceFrom: 100,
-        features: ["2–4 Personen", "eigene Küche", "Hund erlaubt"],
+        features: ["2–4 Personen", "Wohnküche", "Eigenes Bad & WC"],
       },
       {
-        name: "Ferienwohnung",
-        kind: "Wohnung · für 2 Personen",
-        text: "Gemütliche Ferienwohnung mit eigenem Schlaf- und Wohnbereich – komfortabel für einen längeren Aufenthalt.",
-        image: { src: `${IMG}/unterkunft-ferienwohnung.webp`, alt: "Schlafzimmer der Ferienwohnung" },
-        priceFrom: 90,
-        features: ["2 Personen", "Schlaf- & Wohnbereich", "ruhige Lage"],
-      },
-      {
-        name: "Komfortzimmer",
-        kind: "Zimmer · mit Bad",
-        text: "Drei Komfortzimmer mit Dusche/WC oder Badewanne, Sat-TV und Radio – Frühstück auf Wunsch.",
-        image: { src: `${IMG}/unterkunft-komfortzimmer.webp`, alt: "Komfortzimmer mit Doppelbett" },
-        priceFrom: 90,
-        features: ["Dusche/WC od. Bad", "Sat-TV & Radio", "Frühstück möglich"],
-      },
-      {
-        name: "Treckinghütte",
-        kind: "Hütte · 2–4 Personen",
-        text: "Urige Holzhütte für 2 bis 4 Personen mit kleiner Küche – warmes Naturholz, mitten in der Natur.",
-        image: { src: `${IMG}/unterkunft-treckinghuette.webp`, alt: "Innenraum der Treckinghütte aus Naturholz mit kleiner Küche" },
-        priceFrom: 50,
-        features: ["2–4 Personen", "kleine Küche", "Naturholz"],
+        name: "Trekkinghütte",
+        kind: "Blockhaus für 2–4 Personen",
+        text: "Urige Blockhütte mit kleiner Küche und überdachter Terrasse — mitten im Grünen am Platzrand.",
+        image: { src: `${IMG}/gallery-36cc33aafa.webp`, alt: "Trekkinghütte aus Holz mit überdachter Terrasse am Camping Zirknitzer" },
+        features: ["2–4 Personen", "Kleine Küche", "Eigene Terrasse"],
       },
       {
         name: "Übernachtungshütte",
-        kind: "Hütte · 2 Personen",
-        text: "Die kleine Übernachtungshütte für 2 Personen – einfach, gemütlich und ruhig gelegen.",
-        image: { src: `${IMG}/unterkunft-uebernachtungshuette.webp`, alt: "Übernachtungshütte mit zwei Betten" },
-        priceFrom: 40,
-        features: ["2 Personen", "gemütlich", "ruhige Lage"],
+        kind: "Hütte für 2 Personen",
+        text: "Gemütliche, ganz in Holz gehaltene Stube mit zwei Schlafplätzen — einfach und urig für eine kurze Auszeit.",
+        image: { src: `${IMG}/gallery-4337b2c2b9.webp`, alt: "Holzvertäfelte Übernachtungshütte mit zwei Betten am Camping Zirknitzer" },
+        features: ["2 Personen", "Gemütliche Holzstube"],
+      },
+      {
+        name: "Komfortzimmer",
+        kind: "Doppelzimmer mit Dusche/WC",
+        text: "Drei Komfortzimmer mit Dusche/WC oder Badewanne, Sat-TV und Radio — bequem direkt beim Gasthof.",
+        image: { src: `${IMG}/accommodation-bfe05e7e0d.webp`, alt: "Komfortzimmer mit Doppelbett am Camping Gasthof Zirknitzer" },
+        priceFrom: 90,
+        features: ["Dusche/WC oder Bad", "Sat-TV", "Radio"],
+      },
+    ],
+  },
+
+  kinder: {
+    heading: "Wasserspaß an der Freizeitanlage",
+    intro:
+      "Nur rund 300 Meter entfernt liegt die Sport- und Freizeitanlage Großkirchheim — das Freibad ist für unsere Gäste gratis.",
+    features: [
+      {
+        title: "Naturschwimmbad mit Sprungturm & Rutsche",
+        text: "Schwimmen im Naturbad mit Springturm und Rutsche — dazu Kletterturm und ein großer Kinderspielplatz.",
+        image: { src: `${IMG}/gallery-f3055a134e.webp`, alt: "Naturschwimmbad mit Kletterturm an der Freizeitanlage Großkirchheim" },
       },
     ],
   },
 
   aktivitaeten: {
-    heading: "Erlebnisse im Nationalpark Hohe Tauern",
+    heading: "Rund um den Großglockner",
     intro:
-      "Ob Sommer oder Winter – rund um Döllach und Großkirchheim wird es nie langweilig. Vom Naturschwimmbad über Wanderungen bis zur Großglockner Hochalpenstraße.",
+      "Wandern, Radfahren, der Großglockner und im Winter Langlauf und Schlittenfahrten — der Nationalpark beginnt direkt vor dem Vorzelt.",
     items: [
       {
-        title: "Naturschwimmbad & Sportanlage",
-        text: "Nur rund 300 m entfernt: Naturschwimmbad mit Springturm und Rutsche, Beachvolleyball, Tennis, Kletterturm und Kinderspielplatz – für unsere Gäste gratis.",
-        image: { src: `${IMG}/aktiv-naturschwimmbad.webp`, alt: "Naturschwimmbad der Sport- und Freizeitanlage Großkirchheim" },
-      },
-      {
         title: "Wandern & Bergsteigen",
-        text: "Touren für Anfänger, Familien und Experten in der Bergwelt der Hohen Tauern rund um den Großglockner.",
-        image: { src: `${IMG}/aktiv-wandern.webp`, alt: "Wanderer vor dem Gletscher im Nationalpark Hohe Tauern" },
+        text: "Wege für Anfänger, Familien und Profis — von gemütlichen Tälern bis hinauf zu klaren Bergseen.",
+        image: { src: `${IMG}/gallery-05ff7ce7fb.webp`, alt: "Wanderer an einem Bergsee in den Hohen Tauern" },
       },
       {
         title: "Großglockner Hochalpenstraße",
-        text: "Ein Naturerlebnis für die ganze Familie – die berühmte Panoramastraße liegt direkt vor der Tür.",
-        image: { src: `${IMG}/aktiv-grossglockner.webp`, alt: "Großglockner mit Pasterze-Gletscher an der Großglockner Hochalpenstraße" },
+        text: "Ein Naturerlebnis für die ganze Familie: hinauf zur Pasterze und zum höchsten Berg Österreichs.",
+        image: { src: `${IMG}/gallery-3172f359a7.webp`, alt: "Glocknerblick-Aussichtsterrasse an der Großglockner Hochalpenstraße mit verschneitem Gipfelpanorama" },
       },
       {
-        title: "Zirknitzgrotte",
-        text: "Der Zirknitzbach bildet hier eine imposante Schlucht – ein lohnendes Ausflugsziel ganz in der Nähe.",
-        image: { src: `${IMG}/aktiv-zirknitzgrotte.webp`, alt: "An der Zirknitzgrotte" },
+        title: "Schluchten & Wasserfälle",
+        text: "Der Zirknitzbach bildet eine imposante Schlucht — rund um den Park rauschen zahlreiche Wasserfälle.",
+        image: { src: `${IMG}/gallery-67e4118f77.webp`, alt: "Eingang der Zirknitzgrotte mit historischem Arsenik-Röstofen in der Zirknitzschlucht" },
       },
       {
-        title: "Winterspaß & Pferdeschlitten",
-        text: "Langlaufen, Eislaufen, Schneeschuhwandern, Rodeln und gemütliche Pferdeschlittenfahrten – Winterurlaub mitten in den Bergen.",
-        image: { src: `${IMG}/aktiv-winter.webp`, alt: "Pferdeschlittenfahrt im Winter" },
+        title: "Winterzauber",
+        text: "Langlaufen, geräumte Wanderwege, Eislaufen, Schneeschuhwandern, Rodeln und Pferdeschlittenfahrten.",
+        image: { src: `${IMG}/gallery-11b736ae5a.webp`, alt: "Das Camping Zirknitzer im tiefen Winter — Eingangsschild unter meterhohem Schnee" },
       },
       {
         title: "Skifahren in Heiligenblut",
-        text: "Das Skigebiet Heiligenblut ist nur 8,5 km entfernt und gratis mit dem Skibus erreichbar; in Großkirchheim gibt es zusätzlich einen kleinen Skilift.",
-        image: { src: `${IMG}/aktiv-skifahren.webp`, alt: "Skigebiet Großglockner Heiligenblut mit Blick aufs Schareck" },
+        text: "Das Skigebiet Heiligenblut ist nur 8,5 Kilometer entfernt und gratis mit dem Skibus erreichbar.",
+        image: { src: `${IMG}/gallery-330ae35a95.webp`, alt: "Blick vom Hang auf das verschneite Mölltal und Großkirchheim im Winter" },
       },
     ],
   },
 
   anreise: {
-    heading: "So findest du uns",
+    heading: "Über die Großglockner Bundesstraße B107 zu uns",
     modes: [
-      { title: "Mit dem Auto", text: "Über die Großglockner Bundesstraße B107 bis Großkirchheim. Aus allen Richtungen über die A10 (Knoten Spittal/Drau), weiter über die B100 und B106/B107." },
-      { title: "Über die Tauernbahn", text: "Aus dem Norden bequem mit der ÖBB-Autoschleuse Böckstein–Mallnitz, dann über Obervellach Richtung Heiligenblut." },
-      { title: "Großglockner Hochalpenstraße", text: "Von der Salzburger Seite über die mautpflichtige Großglockner Hochalpenstraße nach Heiligenblut, dann auf der B107 nach Großkirchheim." },
+      {
+        title: "Mit dem Auto",
+        text: "Über die Tauernautobahn A10 bis Knoten Spittal, weiter über B100/B106 ins Mölltal und auf der B107 nach Großkirchheim — oder von Salzburg über die Großglockner Hochalpenstraße.",
+      },
+      {
+        title: "Mit der Bahn",
+        text: "Bahnhof Spittal-Millstättersee, von dort mit dem Bus ins Mölltal nach Großkirchheim/Döllach.",
+      },
+      {
+        title: "Mit dem Flugzeug",
+        text: "Flughafen Klagenfurt rund 100 km, Salzburg rund 150 km — weiter mit Mietwagen oder Bahn.",
+      },
     ],
   },
 
   galerie: {
-    heading: "Berge, Hütten & stille Momente",
-    headingEmphasis: "stille Momente",
+    heading: "Impressionen rund um Döllach",
+    headingEmphasis: "Döllach",
     intro:
-      "Ein paar Eindrücke vom Campingplatz Zirknitzer und aus der Bergwelt rund um Döllach und Großkirchheim.",
+      "Almen, Kapellen, das Dorf und die Gipfel der Hohen Tauern — ein paar Eindrücke aus unserer Umgebung.",
     tag: "Nationalpark Hohe Tauern",
+    moreCount: 30,
     images: [
-      { src: `${IMG}/galerie-gipfel.webp`, alt: "Bergpanorama der Hohen Tauern" },
-      { src: `${IMG}/galerie-almen.webp`, alt: "Herbstliche Lärchen und verschneite Gipfel bei den Mittner Almen" },
-      { src: `${IMG}/galerie-pasterze.webp`, alt: "Pasterze-Gletscher mit Johannisberg" },
-      { src: `${IMG}/galerie-blockhuette.webp`, alt: "Blockhütte am Campingplatz Zirknitzer" },
-      { src: `${IMG}/galerie-katze.webp`, alt: "Katze auf einem blumengeschmückten Balkon am Platz" },
-      { src: `${IMG}/galerie-bergsee.webp`, alt: "Bergsee in den Hohen Tauern" },
+      { src: `${IMG}/gallery-c259c6ba8b.webp`, alt: "Aussichtsplatz Mittner Almen mit Bank, goldenen Herbstlärchen und verschneiten Gipfeln" },
+      { src: `${IMG}/gallery-5ba3e97fa7.webp`, alt: "Heißluftballon über dem verschneiten Großkirchheim im Mölltal" },
+      { src: `${IMG}/gallery-9eb80f3917.webp`, alt: "Blick auf Döllach mit Kirche im Mölltal" },
     ],
   },
 
   booking: {
-    heading: "Verfügbarkeit & Anfrage",
+    heading: "Sichere dir deinen Platz in Döllach",
+    headingEmphasis: "in Döllach",
     intro:
-      "Wähle Zeitraum, Unterkunft und Personen – Familie Zirknitzer meldet sich mit deiner persönlichen Verfügbarkeit.",
+      "Sende uns Zeitraum und Personenzahl — Familie Zirknitzer meldet sich persönlich mit deiner Verfügbarkeit.",
     pricesArePlaceholder: false,
-    priceNote: "ab-Preise Nebensaison für 2 Personen · zzgl. Aufenthaltsabgabe (4–4,50 €/Person) · Stand 2026, Irrtümer vorbehalten",
+    priceNote:
+      "ab-Preise Vorsaison 2026, für 2 Personen — Strom (€ 0,70/kWh) und Aufenthaltsabgabe (€ 4 p. P.) extra · Zimmer- und Ferienhauspreise bitte bei der Anfrage bestätigen.",
     highlight: {
-      title: "Freibad inklusive",
-      text: "Die Benutzung des Naturschwimmbads im Freibad Großkirchheim ist für alle Gäste gratis.",
+      title: "Freibad gratis",
+      text: "Die Benutzung des Freibades Großkirchheim ist für alle Gäste gratis.",
     },
     categories: [
-      // Reale Preisliste 2026 (Nebensaison, 2 Personen). Stellplatz = Großer Stellplatz.
       { id: "stellplatz", label: "Stellplatz", perNight: 28 },
-      { id: "huette", label: "Hütte", perNight: 40 },
-      { id: "zimmer", label: "Komfortzimmer", perNight: 90 },
+      { id: "komfortzimmer", label: "Komfortzimmer", perNight: 90 },
       { id: "ferienhaus", label: "Ferienhaus", perNight: 100 },
     ],
   },
@@ -237,48 +231,19 @@ export const campingZirknitzer: CampsiteConfig = {
     mail: "camping.zirknitzer@utanet.at",
     facebook: "https://www.facebook.com/Camping-Zirknitzer-701480439889024/",
     adresse: "Döllach 107 · 9843 Großkirchheim · Kärnten",
-    // Keine Koordinaten in der Quelle, kein Internet zum Geocoden → coords weggelassen (Karte aus, Adresse sichtbar).
   },
 
   languages: ["DE"],
 
   nav: [
-    {
-      label: "Camping",
-      href: "#camping",
-      children: [
-        { label: "Stellplätze", href: "#camping" },
-        { label: "Glocknerradweg R8", href: "#camping" },
-        { label: "Ausstattung", href: "#camping" },
-      ],
-    },
-    {
-      label: "Unterkünfte",
-      href: "#mobilheime",
-      children: [
-        { label: "Ferienhaus", href: "#mobilheime" },
-        { label: "Hütten", href: "#mobilheime" },
-        { label: "Zimmer & Wohnung", href: "#mobilheime" },
-      ],
-    },
-    {
-      label: "Erlebnisse",
-      href: "#aktivitaeten",
-      children: [
-        { label: "Naturschwimmbad", href: "#aktivitaeten" },
-        { label: "Wandern & Bergsteigen", href: "#aktivitaeten" },
-        { label: "Winter & Ski", href: "#aktivitaeten" },
-      ],
-    },
-    {
-      label: "Preise & Lage",
-      href: "#booking",
-      children: [
-        { label: "Preise", href: "#booking" },
-        { label: "Anreise", href: "#anreise" },
-        { label: "Kontakt", href: "#anreise" },
-      ],
-    },
+    { label: "Camping", href: "#camping" },
+    { label: "Unterkünfte", href: "#mobilheime" },
+    { label: "Freizeit", href: "#kinder" },
+    { label: "Aktiv", href: "#aktivitaeten" },
+    { label: "Preise & Lage", href: "#booking", children: [
+      { label: "Preise", href: "#booking" },
+      { label: "Anreise", href: "#anreise" },
+    ]},
   ],
 };
 
