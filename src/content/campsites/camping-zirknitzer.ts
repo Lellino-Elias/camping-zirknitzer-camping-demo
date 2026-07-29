@@ -161,11 +161,6 @@ const campingZirknitzer: CampsiteConfig = {
         image: { src: `${IMG}/gallery-67e4118f77.webp`, alt: "Eingang der Zirknitzgrotte mit historischem Arsenik-Röstofen in der Zirknitzschlucht" },
       },
       {
-        title: "Winterzauber",
-        text: "Langlaufen, geräumte Wanderwege, Eislaufen, Schneeschuhwandern, Rodeln und Pferdeschlittenfahrten.",
-        image: { src: `${IMG}/gallery-11b736ae5a.webp`, alt: "Das Camping Zirknitzer im tiefen Winter — Eingangsschild unter meterhohem Schnee" },
-      },
-      {
         title: "Skifahren in Heiligenblut",
         text: "Das Skigebiet Heiligenblut ist nur 8,5 Kilometer entfernt und gratis mit dem Skibus erreichbar.",
         image: { src: `${IMG}/gallery-330ae35a95.webp`, alt: "Blick vom Hang auf das verschneite Mölltal und Großkirchheim im Winter" },
